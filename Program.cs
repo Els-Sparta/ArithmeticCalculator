@@ -41,6 +41,31 @@ namespace Calculator
             Console.WriteLine(name + " your answer is " + answer);
             break;
           }
+          else if (operation == "-")
+          {
+            var answer = firstNumber - secondNumber;
+            Console.WriteLine(name + " your answer is " + answer);
+            break;
+          }
+          else if (operation == "*")
+          {
+            var answer = firstNumber * secondNumber;
+            Console.WriteLine(name + " your answer is " + answer);
+            break;
+          }
+          else if (operation == "/")
+          {
+            var answer = firstNumber / secondNumber;
+            Console.WriteLine(name + " your answer is " + answer);
+            break;
+          }
+          else
+          {
+            Console.WriteLine(name + " PLEASE select a valid operator.");
+            Console.WriteLine("Restarting...");
+            continue;
+          }
+
       }
     }
   }
