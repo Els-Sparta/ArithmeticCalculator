@@ -59,6 +59,7 @@ namespace Calculator
             // Addition
             if (operation == "+")
             {
+              // save the answer to a variable and print it out on the console
               answer = firstNumber + secondNumber;
               Console.WriteLine(name + " your answer is " + answer);
               break;
@@ -66,6 +67,7 @@ namespace Calculator
             // Subtraction
             else if (operation == "-")
             {
+              // save the answer to a variable and print it out on the console
               answer = firstNumber - secondNumber;
               Console.WriteLine(name + " your answer is " + answer);
               break;
@@ -73,6 +75,7 @@ namespace Calculator
             // Multiplication
             else if (operation == "*")
             {
+              // save the answer to a variable and print it out on the console
               answer = firstNumber * secondNumber;
               Console.WriteLine(name + " your answer is " + answer);
               break;
@@ -80,6 +83,7 @@ namespace Calculator
             // Division
             else if (operation == "/")
             {
+              // save the answer to a variable and print it out on the console5
               answer = firstNumber / secondNumber;
               Console.WriteLine(name + " your answer is " + answer);
               break;
@@ -98,6 +102,7 @@ namespace Calculator
             // Ask the user what operation, index or squareroot
             Console.WriteLine(name + " type in 'i/s' to perform an (i)ndex or (s)quareroot operation");
             operation = Console.ReadLine();
+            // Index opertaion
             if(operation.ToLower() == "i")
             {
               //Prompt the user to type in their first number
@@ -123,10 +128,12 @@ namespace Calculator
                 Console.WriteLine("Restarting...");
                 continue;
               }
+              // save the answer to a variable and print it out on the console
               answer = Math.Pow(firstNumber, secondNumber);
               Console.WriteLine(name + " your answer is " + answer);
               break;
             }
+            // Squareroot Operation
             else if(operation.ToLower() == "s")
             {
               //Prompt the user to type in their first number
@@ -147,6 +154,7 @@ namespace Calculator
                 Console.WriteLine("Restarting...");
                 continue;
               }
+              // save the answer to a variable and print it out on the console
               answer = Math.Pow(firstNumber, 0.5);
               Console.WriteLine(name + " your answer is " + answer);
               break;
