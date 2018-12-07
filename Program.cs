@@ -19,7 +19,7 @@ namespace Calculator
           var firstEntry = Console.ReadLine();
           double firstNumber;
 
-          Console.Write("Please type your second number ");
+          Console.Write(name + " can you please type your second number ");
           var secondEntry = Console.ReadLine();
           double secondNumber;
           try
@@ -33,39 +33,44 @@ namespace Calculator
             Console.WriteLine("Restarting...");
             continue;
           }
-          Console.Write("Please type +, -, * or / to perform that calculation ");
-          var operation = Console.ReadLine();
-          if (operation == "+")
-          {
-            var answer = firstNumber + secondNumber;
-            Console.WriteLine(name + " your answer is " + answer);
-            break;
-          }
-          else if (operation == "-")
-          {
-            var answer = firstNumber - secondNumber;
-            Console.WriteLine(name + " your answer is " + answer);
-            break;
-          }
-          else if (operation == "*")
-          {
-            var answer = firstNumber * secondNumber;
-            Console.WriteLine(name + " your answer is " + answer);
-            break;
-          }
-          else if (operation == "/")
-          {
-            var answer = firstNumber / secondNumber;
-            Console.WriteLine(name + " your answer is " + answer);
-            break;
-          }
-          else
-          {
-            Console.WriteLine(name + " PLEASE select a valid operator.");
-            Console.WriteLine("Restarting...");
-            continue;
-          }
+          Console.WriteLine(name + " now type if you would like to perform a (b)asic or (a)dvanced calculation");
+          var which = Console.ReadLine();
 
+          if (which == "b")
+          {
+            Console.Write(name + "can you please select an operator +, -, * or /: ");
+            var operation = Console.ReadLine();
+            if (operation == "+")
+            {
+              var answer = firstNumber + secondNumber;
+              Console.WriteLine(name + " your answer is " + answer);
+              break;
+            }
+            else if (operation == "-")
+            {
+              var answer = firstNumber - secondNumber;
+              Console.WriteLine(name + " your answer is " + answer);
+              break;
+            }
+            else if (operation == "*")
+            {
+              var answer = firstNumber * secondNumber;
+              Console.WriteLine(name + " your answer is " + answer);
+              break;
+            }
+            else if (operation == "/")
+            {
+              var answer = firstNumber / secondNumber;
+              Console.WriteLine(name + " your answer is " + answer);
+              break;
+            }
+            else
+            {
+              Console.WriteLine(name + " PLEASE select a valid operator.");
+              Console.WriteLine("Restarting...");
+              continue;
+            }
+          }
       }
     }
   }
