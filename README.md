@@ -1,5 +1,7 @@
 # ArithmeticCalculator
 
+## User is given the option to perform either a Basic or Advanced Calculation
+
 ## Basic Calculator
 
 #### User is able to input two numbers to perform a basic calculation
@@ -10,3 +12,9 @@
 * '/', Allows the user to perform a subtraction between their two numbers
 
 ## Advanced Calculator
+
+#### User is first given the option to perform an index or square root operation
+* Index
+    * User is prompted for the two numbers, a base and an index
+* SquareRoot
+    * User is prompted for one number to calculate the square root of that number
